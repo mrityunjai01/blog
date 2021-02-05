@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Blog</title>
-    <link>mrityunjai01.github.io/blog/post/</link>
+    <link>https://mrityunjai01.github.io/blog/post/</link>
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0530</lastBuildDate><atom:link href="mrityunjai01.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://mrityunjai01.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Succumb</title>
-      <link>mrityunjai01.github.io/blog/succumb/</link>
+      <link>https://mrityunjai01.github.io/blog/succumb/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>mrityunjai01.github.io/blog/succumb/</guid>
+      <guid>https://mrityunjai01.github.io/blog/succumb/</guid>
       <description>Succumb Life seems to be about choices
 choices, there many are,
 in this glorious age of chemical effluence
@@ -28,10 +28,10 @@ floating to the top, once in a while</description>
     
     <item>
       <title>Headphones</title>
-      <link>mrityunjai01.github.io/blog/headphones/</link>
+      <link>https://mrityunjai01.github.io/blog/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>mrityunjai01.github.io/blog/headphones/</guid>
+      <guid>https://mrityunjai01.github.io/blog/headphones/</guid>
       <description>Headphones look
 two lobes one bridge
 clung to my head, like a hook
@@ -50,10 +50,10 @@ the first lecture of the day.</description>
     
     <item>
       <title>Mistakes</title>
-      <link>mrityunjai01.github.io/blog/mistakes/</link>
+      <link>https://mrityunjai01.github.io/blog/mistakes/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0530</pubDate>
       
-      <guid>mrityunjai01.github.io/blog/mistakes/</guid>
+      <guid>https://mrityunjai01.github.io/blog/mistakes/</guid>
       <description>Mistakes It&amp;rsquo;s a D, stop staring like dumb
 it&amp;rsquo;s my gradesheet. barely brushed flunk grade, Expectations apart, how am I supposed to respond when
 that&amp;rsquo;s all I tried.
@@ -68,10 +68,10 @@ a bed of scorpions eating your stomach from inside</description>
     
     <item>
       <title>Can you give me your code</title>
-      <link>mrityunjai01.github.io/blog/java_code/</link>
+      <link>https://mrityunjai01.github.io/blog/java_code/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0530</pubDate>
       
-      <guid>mrityunjai01.github.io/blog/java_code/</guid>
+      <guid>https://mrityunjai01.github.io/blog/java_code/</guid>
       <description>Only one person can correctly interpret it as it is based off a personal anecdote. He knows that. can you give me your code, if you like it as it is,
 just a java file, jittery
 with small classes and big functions, which I anyways
