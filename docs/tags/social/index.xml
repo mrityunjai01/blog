@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>social on My Blog</title>
-    <link>/tags/social/</link>
+    <link>/blog/tags/social/</link>
     <description>Recent content in social on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/blog/tags/social/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mansplaining</title>
-      <link>/mansplaining/</link>
+      <link>/blog/mansplaining/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0530</pubDate>
       
-      <guid>/mansplaining/</guid>
+      <guid>/blog/mansplaining/</guid>
       <description>It’s addressed from the POV of a cis male. The narrator (‘I’, a cis male) is talking about ‘you’ (a non cis male), who’s supposedly a colleague.
 Vibrant as ever, my voice seeks to explain the working of the quantum mechanical treatment of a free particle The tone is calm, but assertive, as if my tongue drives the paddle of your mind. I&amp;rsquo;ve ended my speech with a short puff, waiting for approval.</description>
     </item>

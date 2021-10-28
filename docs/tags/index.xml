@@ -2,98 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My Blog</title>
-    <link>/tags/</link>
+    <link>/blog/tags/</link>
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>social</title>
-      <link>/tags/social/</link>
+      <link>/blog/tags/social/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/social/</guid>
+      <guid>/blog/tags/social/</guid>
       <description></description>
     </item>
     
     <item>
       <title>environment</title>
-      <link>/tags/environment/</link>
+      <link>/blog/tags/environment/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/environment/</guid>
+      <guid>/blog/tags/environment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nature</title>
-      <link>/tags/nature/</link>
+      <link>/blog/tags/nature/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/nature/</guid>
+      <guid>/blog/tags/nature/</guid>
       <description></description>
     </item>
     
     <item>
       <title>river</title>
-      <link>/tags/river/</link>
+      <link>/blog/tags/river/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/river/</guid>
+      <guid>/blog/tags/river/</guid>
       <description></description>
     </item>
     
     <item>
       <title>water</title>
-      <link>/tags/water/</link>
+      <link>/blog/tags/water/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/water/</guid>
+      <guid>/blog/tags/water/</guid>
       <description></description>
     </item>
     
     <item>
       <title>water pollution</title>
-      <link>/tags/water-pollution/</link>
+      <link>/blog/tags/water-pollution/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/water-pollution/</guid>
+      <guid>/blog/tags/water-pollution/</guid>
       <description></description>
     </item>
     
     <item>
       <title>headphones</title>
-      <link>/tags/headphones/</link>
+      <link>/blog/tags/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/headphones/</guid>
+      <guid>/blog/tags/headphones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>academics</title>
-      <link>/tags/academics/</link>
+      <link>/blog/tags/academics/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/academics/</guid>
+      <guid>/blog/tags/academics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer science</title>
-      <link>/tags/computer-science/</link>
+      <link>/blog/tags/computer-science/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/computer-science/</guid>
+      <guid>/blog/tags/computer-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>/tags/java/</link>
+      <link>/blog/tags/java/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>/tags/java/</guid>
+      <guid>/blog/tags/java/</guid>
       <description></description>
     </item>
     

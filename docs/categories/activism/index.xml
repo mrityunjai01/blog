@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>activism on My Blog</title>
-    <link>/categories/activism/</link>
+    <link>/blog/categories/activism/</link>
     <description>Recent content in activism on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/activism/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/categories/activism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Headphones</title>
-      <link>/headphones/</link>
+      <link>/blog/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/headphones/</guid>
+      <guid>/blog/headphones/</guid>
       <description>Headphones look
 two lobes one bridge
 clung to my head, like a hook

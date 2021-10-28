@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My Blog</title>
-    <link>/categories/</link>
+    <link>/blog/categories/</link>
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>activism</title>
-      <link>/categories/activism/</link>
+      <link>/blog/categories/activism/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/activism/</guid>
+      <guid>/blog/categories/activism/</guid>
       <description></description>
     </item>
     
     <item>
       <title>headphones</title>
-      <link>/categories/headphones/</link>
+      <link>/blog/categories/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/headphones/</guid>
+      <guid>/blog/categories/headphones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>voices</title>
-      <link>/categories/voices/</link>
+      <link>/blog/categories/voices/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/voices/</guid>
+      <guid>/blog/categories/voices/</guid>
       <description></description>
     </item>
     

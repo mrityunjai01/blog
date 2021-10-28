@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseURL = "/"
+baseURL = "/blog"
 languageCode = "en-us"
 title = "My Blog"
 theme = "ghostwriter"
