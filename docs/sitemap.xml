@@ -3,117 +3,127 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/environment/</loc>
+    <loc>/mansplaining/</loc>
+    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/social/</loc>
+    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/environment/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/</loc>
+    <loc>/tags/nature/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/nature/</loc>
+    <loc>/tags/river/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/post/</loc>
+    <loc>/succumb/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/river/</loc>
+    <loc>/tags/water/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/succumb/</loc>
+    <loc>/tags/water-pollution/</loc>
     <lastmod>2021-02-05T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/water/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/water-pollution/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/categories/activism/</loc>
+    <loc>/categories/activism/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/headphones/</loc>
+    <loc>/headphones/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/headphones/</loc>
+    <loc>/tags/headphones/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/categories/headphones/</loc>
+    <loc>/categories/headphones/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/categories/voices/</loc>
+    <loc>/categories/voices/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/mistakes/</loc>
+    <loc>/tags/academics/</loc>
+    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/java_code/</loc>
+    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/computer-science/</loc>
+    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/java/</loc>
+    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/mistakes/</loc>
     <lastmod>2021-01-30T00:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/academics/</loc>
-    <lastmod>2020-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/java_code/</loc>
-    <lastmod>2020-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/computer-science/</loc>
-    <lastmod>2020-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/tags/java/</loc>
-    <lastmod>2020-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrityunjai01.github.io/blog/page/about/</loc>
+    <loc>/page/about/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/page/</loc>
+    <loc>/page/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrityunjai01.github.io/blog/page/contact/</loc>
+    <loc>/page/contact/</loc>
   </url>
   
 </urlset>

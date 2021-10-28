@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>computer science on My Blog</title>
-    <link>https://mrityunjai01.github.io/blog/tags/computer-science/</link>
+    <link>/tags/computer-science/</link>
     <description>Recent content in computer science on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0530</lastBuildDate><atom:link href="https://mrityunjai01.github.io/blog/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0530</lastBuildDate><atom:link href="/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Can you give me your code</title>
-      <link>https://mrityunjai01.github.io/blog/java_code/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0530</pubDate>
+      <link>/java_code/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/java_code/</guid>
+      <guid>/java_code/</guid>
       <description>Only one person can correctly interpret it as it is based off a personal anecdote. He knows that. can you give me your code, if you like it as it is,
 just a java file, jittery
 with small classes and big functions, which I anyways

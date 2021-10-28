@@ -1,16 +1,14 @@
 +++
-title = "Can you give me your code"
-description = "Alternate stanzas represent conversation speech between two students who are given a coding assignment to submit for grading."
+title = "Mansplaining"
+description = "An fictional experience of a mansplainer"
 tags = [
-    "academics",
-    "computer science",
-    "java"
+    "social",
 
 ]
 categories = [
 
 ]
-date = 2021-02-01
+date = 2021-05-02
 draft = false
 author = "Mrityunjai"
 +++

@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Blog</title>
-    <link>https://mrityunjai01.github.io/blog/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://mrityunjai01.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mansplaining</title>
+      <link>/mansplaining/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>/mansplaining/</guid>
+      <description>It’s addressed from the POV of a cis male. The narrator (‘I’, a cis male) is talking about ‘you’ (a non cis male), who’s supposedly a colleague.
+Vibrant as ever, my voice seeks to explain the working of the quantum mechanical treatment of a free particle The tone is calm, but assertive, as if my tongue drives the paddle of your mind. I&amp;rsquo;ve ended my speech with a short puff, waiting for approval.</description>
+    </item>
+    
     <item>
       <title>Succumb</title>
-      <link>https://mrityunjai01.github.io/blog/succumb/</link>
+      <link>/succumb/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/succumb/</guid>
+      <guid>/succumb/</guid>
       <description>Succumb Life seems to be about choices
 choices, there many are,
 in this glorious age of chemical effluence
@@ -28,10 +38,10 @@ floating to the top, once in a while</description>
     
     <item>
       <title>Headphones</title>
-      <link>https://mrityunjai01.github.io/blog/headphones/</link>
+      <link>/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/headphones/</guid>
+      <guid>/headphones/</guid>
       <description>Headphones look
 two lobes one bridge
 clung to my head, like a hook
@@ -49,11 +59,26 @@ the first lecture of the day.</description>
     </item>
     
     <item>
+      <title>Can you give me your code</title>
+      <link>/java_code/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
+      
+      <guid>/java_code/</guid>
+      <description>Only one person can correctly interpret it as it is based off a personal anecdote. He knows that. can you give me your code, if you like it as it is,
+just a java file, jittery
+with small classes and big functions, which I anyways
+don&amp;rsquo;t care much about, after all
+it is the java file I need.
+The java file you dearly need, petrified
+the strings holding my skull together</description>
+    </item>
+    
+    <item>
       <title>Mistakes</title>
-      <link>https://mrityunjai01.github.io/blog/mistakes/</link>
+      <link>/mistakes/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0530</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/mistakes/</guid>
+      <guid>/mistakes/</guid>
       <description>Mistakes It&amp;rsquo;s a D, stop staring like dumb
 it&amp;rsquo;s my gradesheet. barely brushed flunk grade, Expectations apart, how am I supposed to respond when
 that&amp;rsquo;s all I tried.
@@ -64,21 +89,6 @@ Sinking into a dark tunnel
 feels familiar, or maybe it&amp;rsquo;s another
 trail of guilt ridden wrist pinches
 a bed of scorpions eating your stomach from inside</description>
-    </item>
-    
-    <item>
-      <title>Can you give me your code</title>
-      <link>https://mrityunjai01.github.io/blog/java_code/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://mrityunjai01.github.io/blog/java_code/</guid>
-      <description>Only one person can correctly interpret it as it is based off a personal anecdote. He knows that. can you give me your code, if you like it as it is,
-just a java file, jittery
-with small classes and big functions, which I anyways
-don&amp;rsquo;t care much about, after all
-it is the java file I need.
-The java file you dearly need, petrified
-the strings holding my skull together</description>
     </item>
     
   </channel>

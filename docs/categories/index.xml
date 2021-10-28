@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My Blog</title>
-    <link>https://mrityunjai01.github.io/blog/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mrityunjai01.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>activism</title>
-      <link>https://mrityunjai01.github.io/blog/categories/activism/</link>
+      <link>/categories/activism/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/categories/activism/</guid>
+      <guid>/categories/activism/</guid>
       <description></description>
     </item>
     
     <item>
       <title>headphones</title>
-      <link>https://mrityunjai01.github.io/blog/categories/headphones/</link>
+      <link>/categories/headphones/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/categories/headphones/</guid>
+      <guid>/categories/headphones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>voices</title>
-      <link>https://mrityunjai01.github.io/blog/categories/voices/</link>
+      <link>/categories/voices/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mrityunjai01.github.io/blog/categories/voices/</guid>
+      <guid>/categories/voices/</guid>
       <description></description>
     </item>
     
