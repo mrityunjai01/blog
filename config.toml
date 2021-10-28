@@ -1,0 +1,18 @@
+publishDir = "docs"
+baseURL = "/"
+languageCode = "en-us"
+title = "My Blog"
+theme = "ghostwriter"
+[Params]
+  mainsections = ["post"]
+  intro = true
+  headline = "Boring Blog"
+  description = "This page features original writing only. I would love to know about anything you are doing, so feel free to contact me."
+  github = "https://github.com/mrityunjai01"
+  twitter = "https://twitter.com/Mrityun95468863"
+  email = "mrityunjaisingh3333 at gmail"
+  opengraph = true
+  shareTwitter = true
+  dateFormat = "Mon, Jan 2, 2006"
+[Permalinks]
+  post = "/:filename/"
