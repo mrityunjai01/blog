@@ -1,129 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/blog/mansplaining/</loc>
-    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
+    <loc>//localhost:1313/docs/a/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/docs/</loc>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/post/</loc>
-    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/social/</loc>
-    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/</loc>
-    <lastmod>2021-05-02T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/environment/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/nature/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/river/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/succumb/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/water/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/water-pollution/</loc>
-    <lastmod>2021-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/categories/activism/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/categories/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/headphones/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/headphones/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/categories/headphones/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/categories/voices/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/academics/</loc>
-    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/java_code/</loc>
-    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/computer-science/</loc>
-    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/tags/java/</loc>
-    <lastmod>2021-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/mistakes/</loc>
-    <lastmod>2021-01-30T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/page/about/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/page/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/page/contact/</loc>
-  </url>
-  
 </urlset>

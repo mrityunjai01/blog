@@ -1,101 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My Blog</title>
-    <link>/blog/tags/</link>
-    <description>Recent content in Tags on My Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on Collection of Articles on ML</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on Collection of Articles on ML</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>social</title>
-      <link>/blog/tags/social/</link>
-      <pubDate>Sun, 02 May 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/social/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>environment</title>
-      <link>/blog/tags/environment/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nature</title>
-      <link>/blog/tags/nature/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/nature/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>river</title>
-      <link>/blog/tags/river/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/river/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>water</title>
-      <link>/blog/tags/water/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/water/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>water pollution</title>
-      <link>/blog/tags/water-pollution/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/water-pollution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>headphones</title>
-      <link>/blog/tags/headphones/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/tags/headphones/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>academics</title>
-      <link>/blog/tags/academics/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/academics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computer science</title>
-      <link>/blog/tags/computer-science/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/computer-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>/blog/tags/java/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0530</pubDate>
-      
-      <guid>/blog/tags/java/</guid>
-      <description></description>
-    </item>
-    
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

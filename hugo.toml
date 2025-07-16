@@ -1,0 +1,17 @@
+publishDir = "docs"
+languageCode = "en-us"
+title = "Collection of Articles on ML"
+baseUrl="."
+theme = "hugo-book"
+[params]
+  BookTheme = "auto"
+  dateFormat = "Mon, Jan 2, 2006"
+  math = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
