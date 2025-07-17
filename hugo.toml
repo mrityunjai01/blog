@@ -1,7 +1,6 @@
 publishDir = "docs"
 languageCode = "en-us"
 title = "Collection of Articles on ML"
-baseUrl="/blog/"
 theme = "hugo-book"
 [params]
   BookTheme = "auto"

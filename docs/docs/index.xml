@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on Collection of Articles on ML</title>
-    <link>//localhost:1313///blog/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Docs on Collection of Articles on ML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313///blog/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kaggle DRW Challenge</title>
-      <link>//localhost:1313///blog/docs/a/</link>
+      <title>Fuck off</title>
+      <link>/docs/b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313///blog/docs/a/</guid>
-      <description>&lt;h1 id=&#34;kaggle-challenge-drw&#34;&gt;&#xA;  Kaggle Challenge (DRW)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#kaggle-challenge-drw&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A price prediction challenge on Kaggle.&lt;/p&gt;</description>
+      <guid>/docs/b/</guid>
+      <description></description>
     </item>
     <item>
       <title>Kaggle DRW Challenge</title>
-      <link>//localhost:1313///blog/docs/b/</link>
+      <link>/docs/a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313///blog/docs/b/</guid>
-      <description></description>
+      <guid>/docs/a/</guid>
+      <description>&lt;h1 id=&#34;kaggle-challenge-drw&#34;&gt;&#xA;  Kaggle Challenge (DRW)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#kaggle-challenge-drw&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A price prediction challenge on Kaggle.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
