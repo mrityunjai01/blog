@@ -1,0 +1,1 @@
+[{"id":0,"href":"/docs/a/","title":"Kaggle DRW Challenge","section":"Docs","content":" Kaggle Challenge (DRW) # A price prediction challenge on Kaggle.\n"},{"id":1,"href":"/docs/b/","title":"Omitted Variable Bias","section":"Docs","content":"Download (b.ipynb)\nimport numpy as np # example of printing an array a = np.array([ [1, 2, 3], ]) print(a) "}]
