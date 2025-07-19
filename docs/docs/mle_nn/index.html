@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+  Maximum Likelihood Estimation for Neural Networks
+  #
+
+
+  Introduction
+  #
+
+Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/blog/docs/mle_nn/">
+  <meta property="og:site_name" content="Collection of Articles on ML">
+  <meta property="og:title" content="Maximum Likelihood Estimation for Neural Networks">
+  <meta property="og:description" content="Maximum Likelihood Estimation for Neural Networks # Introduction # Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-10-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-01T00:00:00+00:00">
+<title>Maximum Likelihood Estimation for Neural Networks | Collection of Articles on ML</title>
+<link rel="icon" href="/blog/favicon.png" >
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="canonical" href="/blog/docs/mle_nn/">
+<link rel="stylesheet" href="/blog/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
+  <script defer src="/blog/fuse.min.js"></script>
+  <script defer src="/blog/en.search.min.3dc7c74e831294663e9a029c565759dd61827f8b95710eb9b4d5cfdd41aa15ae.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+    
+  
+    <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [
+        ["\\[", "\\]"],
+        ["$$", "$$"],
+      ], 
+      inlineMath: [["\\(", "\\)"]], 
+    },
+    loader: {
+      load: ["ui/safe"],
+    },
+  };
+</script>
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/blog/"><span>Collection of Articles on ML</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/mle_nn/" class="active">Maximum Likelihood Estimation for Neural Networks</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/blog/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Maximum Likelihood Estimation for Neural Networks</h3>
+
+  <label for="toc-control">
+    
+    <img src="/blog/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><!-- markdownlint-disable MD025 MD013 -->
+<h1 id="maximum-likelihood-estimation-for-neural-networks">
+  Maximum Likelihood Estimation for Neural Networks
+  <a class="anchor" href="#maximum-likelihood-estimation-for-neural-networks">#</a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<p>Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.</p>
+<p>MLE not only provides estimates of the parameters (an estimate is a function of data observations \(x_i\) and \(y_i\), which is said to be equal in expectation to some function of &ldquo;actual&rdquo; population parameters), but also gives us some nice properties of the model.</p>
+<ol>
+<li>Consistency: As the sample size approaches infinity, the MLE converges in probability to the true parameter value. This means that with sufficiently large samples, the estimator will be arbitrarily close to the actual parameter.</li>
+<li>Asymptotic Normality</li>
+<li>Asymptotic Efficiency</li>
+</ol>
+<p>For these desirable properties to hold, several regularity conditions must be satisfied:</p>
+<ul>
+<li>
+<p>Identifiability: Different parameter values must produce different probability distributions. The mapping from parameters to distributions must be one-to-one.</p>
+</li>
+<li>
+<p>Differentiability, Regularity of Support, Smoothness Conditions, Finite Fisher Information, Compact Parameter Space.</p>
+</li>
+</ul>
+<p>We&rsquo;ll focus on Identifiability and show that identifiability is not satisfied for most neural network architectures. We&rsquo;ll try to ascertain, using an example, whether the MLE is consistent.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

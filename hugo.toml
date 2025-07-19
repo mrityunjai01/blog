@@ -1,4 +1,5 @@
 publishDir = "docs"
+baseUrl = "/blog/"
 languageCode = "en-us"
 title = "Collection of Articles on ML"
 theme = "hugo-book"
@@ -8,9 +9,12 @@ theme = "hugo-book"
   math = true
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
+

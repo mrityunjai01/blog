@@ -1,11 +1,13 @@
-<!--pybook.html-->
-<h3>
-  <a href="/pybooks/{{ index .Params 0 }}.html"
-    >Click here to view this notebook in full screen</a
-  >
-</h3>
-<iframe
-  src="/pybooks/{{ index .Params 0 }}.html"
-  style="height:{{ index .Params 1}}px;width:100%;border:none;overflow:hidden;"
-  scrolling="no"
-></iframe>
+{{ $notebook := .Get 0 }} {{ $path := printf "static/notebooks/%s" $notebook }}
+{{ if fileExists $path }}
+<div class="notebook-container">
+  <iframe
+    src="{{ $notebook }}"
+    width="100%"
+    height="600px"
+    frameborder="0"
+  ></iframe>
+</div>
+{{ else }}
+<p>Notebook not found: {{ $notebook }}</p>
+{{ end }}
