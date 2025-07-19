@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -16,8 +16,8 @@
 Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="/blog/docs/mle_nn/">
-  <meta property="og:site_name" content="Collection of Articles on ML">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="//localhost:1313/docs/mle_nn/">
+  <meta property="og:site_name" content="Collection of Short Articles on ML">
   <meta property="og:title" content="Maximum Likelihood Estimation for Neural Networks">
   <meta property="og:description" content="Maximum Likelihood Estimation for Neural Networks # Introduction # Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
   <meta property="og:locale" content="en_us">
@@ -25,13 +25,13 @@ Maximum Likelihood Estimation is a concept that allows us to estimate parameters
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2024-10-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-10-01T00:00:00+00:00">
-<title>Maximum Likelihood Estimation for Neural Networks | Collection of Articles on ML</title>
-<link rel="icon" href="/blog/favicon.png" >
-<link rel="manifest" href="/blog/manifest.json">
-<link rel="canonical" href="/blog/docs/mle_nn/">
-<link rel="stylesheet" href="/blog/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
-  <script defer src="/blog/fuse.min.js"></script>
-  <script defer src="/blog/en.search.min.3dc7c74e831294663e9a029c565759dd61827f8b95710eb9b4d5cfdd41aa15ae.js" ></script>
+<title>Maximum Likelihood Estimation for Neural Networks | Collection of Short Articles on ML</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="//localhost:1313/docs/mle_nn/">
+<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" integrity="sha256-J8YB/yUcxcl5a7Jyqs6WABPPNR0MKKfhMBSHsy1IAO4=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.681aeb8a97200d2dc067ed6b8c14e2f0cac3c09fa00d9a4841d627de38a0a023.js" integrity="sha256-aBrripcgDS3AZ&#43;1rjBTi8MrDwJ&#43;gDZpIQdYn3jigoCM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -69,7 +69,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/blog/"><span>Collection of Articles on ML</span>
+  <a class="flex align-center" href="/"><span>Collection of Short Articles on ML</span>
   </a>
 </h2>
 
@@ -105,7 +105,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blog/docs/mle_nn/" class="active">Maximum Likelihood Estimation for Neural Networks</a>
+    <a href="/docs/mle_nn/" class="active">Maximum Likelihood Estimation for Neural Networks</a>
   
 
         </li>
@@ -143,14 +143,14 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/blog/svg/menu.svg" class="book-icon" alt="Menu" />
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
   <h3>Maximum Likelihood Estimation for Neural Networks</h3>
 
   <label for="toc-control">
     
-    <img src="/blog/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
@@ -201,6 +201,57 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 <p>We&rsquo;ll focus on Identifiability and show that identifiability is not satisfied for most neural network architectures. We&rsquo;ll try to ascertain, using an example, whether the MLE is consistent.</p>
+<pre class="mermaid">
+  sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</pre>
+
+<pre class="mermaid">
+  graph LR
+%% Input Layer
+X1[x₁&lt;br/&gt;Input 1]
+X2[x₂&lt;br/&gt;Input 2]
+
+    %% Hidden Layer
+    H1((h₁&lt;br/&gt;Hidden 1))
+    H2((h₂&lt;br/&gt;Hidden 2))
+    H3((h₃&lt;br/&gt;Hidden 3))
+
+    %% Output Layer
+    Y[y&lt;br/&gt;Output]
+
+    %% Connections with weights
+    X1 --&gt;|w₁₁| H1
+    X1 --&gt; H2
+    X1 --&gt; H3
+
+    X2 --&gt;|w₂₁| H1
+    X2 --&gt; H2
+    X2 --&gt; H3
+
+    H1 --&gt; Y
+    H2 --&gt; Y
+    H3 --&gt; Y
+
+    %% Styling
+    classDef input fill:#e1f5fe
+    classDef hidden fill:#f3e5f5
+    classDef output fill:#e8f5e8
+
+    class X1,X2 input
+    class H1,H2,H3 hidden
+    class Y output
+</pre>
+
 </article>
  
       
@@ -252,8 +303,10 @@ https://github.com/alex-shpak/hugo-book
     </aside>
     
   </main>
-
-  
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
 </body>
 </html>
 
