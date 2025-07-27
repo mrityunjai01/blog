@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="//localhost:1313/docs/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/">
   <meta property="og:site_name" content="Collection of Short Articles on ML">
   <meta property="og:title" content="Docs">
   <meta property="og:locale" content="en_us">
@@ -15,11 +15,11 @@
 <title>Docs | Collection of Short Articles on ML</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="//localhost:1313/docs/">
-<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" integrity="sha256-J8YB/yUcxcl5a7Jyqs6WABPPNR0MKKfhMBSHsy1IAO4=" crossorigin="anonymous">
+<link rel="canonical" href="/docs/">
+<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.829102511e0724e14b6ad02cbb4a0095cec0b5030262a7c13cee81b914a6e7f5.js" integrity="sha256-gpECUR4HJOFLatAsu0oAlc7AtQMCYqfBPO6BuRSm5/U=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/docs/index.xml" title="Collection of Short Articles on ML" />
+  <script defer src="/en.search.min.d736134201fd759d1ed0768958338f10525f611af7709449cb65ecc2944b4a8b.js" ></script>
+<link rel="alternate" type="application/rss+xml" href="/docs/index.xml" title="Collection of Short Articles on ML" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -87,6 +87,47 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search/" class="">Parametrizing Decision Trees</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/omitted_vars/" class="">Can Machines Search for Omitted Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/technical_trading/" class="">Snooping in Technical Trading</a>
+  
+
+        </li>
+      
+    
+      
         <li>
           
   
@@ -97,6 +138,21 @@ https://github.com/alex-shpak/hugo-book
   
 
         </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/span/" class="">SPAN</a>
+  
+
+        </li>
+      
+    
       
     
   </ul>
@@ -159,7 +215,411 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+<div class="list-container">
+  <header class="list-header">
+    <h1>Docs</h1>
+    
+  </header>
+
+  <div class="posts-grid">
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/param_dt/">Parametrizing Decision Trees</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2025-03-11">
+              March 11, 2025
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/param_dt/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/search/">Parametrizing Decision Trees</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2025-03-11">
+              March 11, 2025
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            <p>References:
+[https://learn.microsoft.com/en-us/azure/search/search-relevance-overview]
+[https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking]</p>
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/search/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/omitted_vars/">Can Machines Search for Omitted Variables</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2024-10-13">
+              October 13, 2024
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            <!-- markdownlint-disable MD025 MD013 -->
+<p>There&rsquo;s some consensus that a lot of methods which are used to detect omitted variables don&rsquo;t worka well if the omitted feature is not correlated with the covariates. This causes a problem when trying to detect possible omission of variables. In this post, I will show that even if we know that there is omission, we can&rsquo;t identify omitted variables by only using analytical methods. We need to bring practical information in to ascertain causality, we&rsquo;re otherwise left with a set of possible correlated variables.</p>
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/omitted_vars/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/technical_trading/">Snooping in Technical Trading</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2024-10-13">
+              October 13, 2024
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            <!-- markdownlint-disable MD025 MD013 -->
+<h1 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h1>
+<p>Technical Trading is defined by the exclusive use of data from past prices and volumes to make trading decisions. It has been widely contested that technical trading doesn&rsquo;t outperform major benchmarks owing to the weak form of the Efficient Market Hypothesis (EMH). However, there are many who believe that technical trading can be profitable, especially when combined with other methods such as fundamental analysis or machine learning. This is especially true when some strategies outperform benchmarks in back-test, leading researchers to claim that those strategies are profitable.</p>
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/technical_trading/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/mle_nn/">Maximum Likelihood Estimation for Neural Networks</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2024-10-01">
+              October 1, 2024
+            </time>
+            
+              <div class="post-tags">
+                
+                  <a href="/tags/static-site-generator" class="tag">static site generator</a>
+                
+                  <a href="/tags/tutorial" class="tag">tutorial</a>
+                
+                  <a href="/tags/documentation" class="tag">documentation</a>
+                
+              </div>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            <!-- markdownlint-disable MD025 MD013 -->
+<h1 id="maximum-likelihood-estimation-for-neural-networks">
+  Maximum Likelihood Estimation for Neural Networks
+  <a class="anchor" href="#maximum-likelihood-estimation-for-neural-networks">#</a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<p>Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.</p>
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/mle_nn/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/span/">SPAN</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="2024-10-01">
+              October 1, 2024
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            <!-- markdownlint-disable MD025 MD013 -->
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/span/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+      <article class="post-card">
+        <header class="post-header">
+          <h2 class="post-title">
+            <a href="/docs/bayes_nn/"></a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="0001-01-01">
+              January 1, 0001
+            </time>
+            
+          </div>
+        </header>
+        
+        <div class="post-summary">
+          
+            
+          
+        </div>
+        
+        <footer class="post-footer">
+          <a href="/docs/bayes_nn/" class="read-more">Read More →</a>
+        </footer>
+      </article>
+    
+  </div>
+</div>
+
+<style>
+.list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.list-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.list-description {
+  font-size: 1.125rem;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px -4px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.post-title a {
+  color: #2d3748;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-title a:hover {
+  color: #3182ce;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tag:hover {
+  background: #cbd5e0;
+  color: #2d3748;
+}
+
+.post-summary {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: #2c5282;
+}
+
+ 
+@media (max-width: 768px) {
+  .list-container {
+    padding: 1rem;
+  }
+  
+  .list-header h1 {
+    font-size: 2rem;
+  }
+  
+  .posts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .post-card {
+    padding: 1.25rem;
+  }
+  
+  .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+  .list-header h1 {
+    color: #f7fafc;
+  }
+  
+  .list-description {
+    color: #cbd5e0;
+  }
+  
+  .post-card {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .post-title a {
+    color: #f7fafc;
+  }
+  
+  .post-title a:hover {
+    color: #63b3ed;
+  }
+  
+  .post-meta {
+    color: #a0aec0;
+  }
+  
+  .tag {
+    background: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .tag:hover {
+    background: #718096;
+    color: #f7fafc;
+  }
+  
+  .post-summary {
+    color: #cbd5e0;
+  }
+  
+  .read-more {
+    color: #63b3ed;
+  }
+  
+  .read-more:hover {
+    color: #90cdf4;
+  }
+}
+</style>
  
       
 
@@ -202,7 +662,10 @@ https://github.com/alex-shpak/hugo-book
     </aside>
     
   </main>
-
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
 </body>
 </html>
 

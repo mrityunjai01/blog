@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -16,7 +16,7 @@
 Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="//localhost:1313/docs/mle_nn/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/mle_nn/">
   <meta property="og:site_name" content="Collection of Short Articles on ML">
   <meta property="og:title" content="Maximum Likelihood Estimation for Neural Networks">
   <meta property="og:description" content="Maximum Likelihood Estimation for Neural Networks # Introduction # Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.">
@@ -25,13 +25,16 @@ Maximum Likelihood Estimation is a concept that allows us to estimate parameters
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2024-10-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-10-01T00:00:00+00:00">
+    <meta property="article:tag" content="Static Site Generator">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Documentation">
 <title>Maximum Likelihood Estimation for Neural Networks | Collection of Short Articles on ML</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="//localhost:1313/docs/mle_nn/">
-<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" integrity="sha256-J8YB/yUcxcl5a7Jyqs6WABPPNR0MKKfhMBSHsy1IAO4=" crossorigin="anonymous">
+<link rel="canonical" href="/docs/mle_nn/">
+<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.681aeb8a97200d2dc067ed6b8c14e2f0cac3c09fa00d9a4841d627de38a0a023.js" integrity="sha256-aBrripcgDS3AZ&#43;1rjBTi8MrDwJ&#43;gDZpIQdYn3jigoCM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d736134201fd759d1ed0768958338f10525f611af7709449cb65ecc2944b4a8b.js" ></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -99,6 +102,47 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search/" class="">Parametrizing Decision Trees</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/omitted_vars/" class="">Can Machines Search for Omitted Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/technical_trading/" class="">Snooping in Technical Trading</a>
+  
+
+        </li>
+      
+    
+      
         <li>
           
   
@@ -109,6 +153,21 @@ https://github.com/alex-shpak/hugo-book
   
 
         </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/span/" class="">SPAN</a>
+  
+
+        </li>
+      
+    
       
     
   </ul>
@@ -163,6 +222,8 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#a-simple-neural-network-example">A Simple Neural Network Example</a></li>
+    <li><a href="#constructed-toy-data-analysis">Constructed Toy Data Analysis</a></li>
   </ul>
 </nav>
 
@@ -185,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#introduction">#</a>
 </h2>
 <p>Maximum Likelihood Estimation is a concept that allows us to estimate parameters of a statistical model. Most models can be thought of as random variables which are functions of some parameters (weights and biases). These weights and biases, combined with some random draws from fundamental distributions (e.g., Gaussian, Bernoulli), can be said to generate data. The combination of weights and draws from random distributions is called a model which is supposed to describe the relationship between inputs \(x_i\) and outputs \(y_i\). The goal of MLE is to find the parameters that maximize the likelihood of observing the given data \(x_i\) and \(y_i\), where \(i\) comes from an indexing set.</p>
-<p>MLE not only provides estimates of the parameters (an estimate is a function of data observations \(x_i\) and \(y_i\), which is said to be equal in expectation to some function of &ldquo;actual&rdquo; population parameters), but also gives us some nice properties of the model.</p>
+<p>MLE not only provides estimates of the parameters (an estimate is a function of data observations \(x_i\) and \(y_i\), which is said to be equal in expectation to some function of &ldquo;actual&rdquo; population parameters), but also gives us some nice properties of the model. MLE doesn&rsquo;t offer any generalizability guarantees, neither does a well fit NN. I aim to show that even a generalizable NN doesn&rsquo;t have consistent parameters.</p>
 <ol>
 <li>Consistency: As the sample size approaches infinity, the MLE converges in probability to the true parameter value. This means that with sufficiently large samples, the estimator will be arbitrarily close to the actual parameter.</li>
 <li>Asymptotic Normality</li>
@@ -200,55 +261,48 @@ https://github.com/alex-shpak/hugo-book
 <p>Differentiability, Regularity of Support, Smoothness Conditions, Finite Fisher Information, Compact Parameter Space.</p>
 </li>
 </ul>
-<p>We&rsquo;ll focus on Identifiability and show that identifiability is not satisfied for most neural network architectures. We&rsquo;ll try to ascertain, using an example, whether the MLE is consistent.</p>
-<pre class="mermaid">
-  sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail!
-    John--&gt;&gt;Alice: Great!
-    John-&gt;&gt;Bob: How about you?
-    Bob--&gt;&gt;John: Jolly good!
-</pre>
-
+<p>We&rsquo;ll focus on Identifiability and show that identifiability is not satisfied for even generalizable neural network architectures. We&rsquo;ll try to ascertain, using an example, whether the MLE is consistent.</p>
+<h2 id="a-simple-neural-network-example">
+  A Simple Neural Network Example
+  <a class="anchor" href="#a-simple-neural-network-example">#</a>
+</h2>
+<h2 id="constructed-toy-data-analysis">
+  Constructed Toy Data Analysis
+  <a class="anchor" href="#constructed-toy-data-analysis">#</a>
+</h2>
+<p>I have this task at</p>
+<p>I construct a simple neural network with one hidden layer and one output layer. The hidden layer has three neurons, and the output layer has one neuron. The hidden layer uses the hyperbolic tangent activation function, and the output layer is linear with a sigmoid activation to model the output as a probability.</p>
 <pre class="mermaid">
   graph LR
-%% Input Layer
-X1[x₁&lt;br/&gt;Input 1]
-X2[x₂&lt;br/&gt;Input 2]
+    %% Input Layer
+    X1[x₁&lt;br/&gt;Input 1]
+    X2[x₂&lt;br/&gt;Input 2]
 
     %% Hidden Layer
-    H1((h₁&lt;br/&gt;Hidden 1))
-    H2((h₂&lt;br/&gt;Hidden 2))
-    H3((h₃&lt;br/&gt;Hidden 3))
+H1[&#34;h₁&lt;br/&gt;Hidden 1: h = tanh (w₁₁ * x₁ + w₂₁ * x₂ + b₁)&#34;]
+    H2[h₂&lt;br/&gt;Hidden 2]
+    H3[h₃&lt;br/&gt;Hidden 3]
 
     %% Output Layer
     Y[y&lt;br/&gt;Output]
 
     %% Connections with weights
-    X1 --&gt;|w₁₁| H1
-    X1 --&gt; H2
-    X1 --&gt; H3
+    X1 -.-&gt;|&#34;[w₁₁]&#34;| H1
+    X1 -.-&gt;|&#34;[w₁₂]&#34;| H2
+    X1 -.-&gt; H3
 
-    X2 --&gt;|w₂₁| H1
-    X2 --&gt; H2
-    X2 --&gt; H3
+    X2 -.-&gt;|&#34;[w₂₁]&#34;| H1
+    X2 -.-&gt;|&#34;[w₂₂]&#34;| H2
+    X2 -.-&gt; H3
 
-    H1 --&gt; Y
-    H2 --&gt; Y
-    H3 --&gt; Y
+    H1 -.-&gt;|&#34;[v₁]&#34;| Y
+    H2 -.-&gt; Y
+    H3 -.-&gt; Y
 
     %% Styling
-    classDef input fill:#e1f5fe
-    classDef hidden fill:#f3e5f5
-    classDef output fill:#e8f5e8
 
     class X1,X2 input
-    class H1,H2,H3 hidden
+    class H1,H2,H3 hidden_nodes
     class Y output
 </pre>
 
@@ -294,6 +348,8 @@ X2[x₂&lt;br/&gt;Input 2]
 <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#a-simple-neural-network-example">A Simple Neural Network Example</a></li>
+    <li><a href="#constructed-toy-data-analysis">Constructed Toy Data Analysis</a></li>
   </ul>
 </nav>
 

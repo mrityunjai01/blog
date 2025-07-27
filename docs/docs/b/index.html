@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  b
+  #
+
+Copyimport numpy as np
+
+
+  example of printing an array
+  #
+
+
+Copya = np.array([
+    [1, 2, 3],
+])
+print(a)
+Output:
+[[1 2 3]]
+
+Copyimport matplotlib.pyplot as plt
+plt.plot(np.arange(3), a.flatten())
+Output:
+[&lt;matplotlib.lines.Line2D at 0x121440550&gt;]
+&lt;Figure size 640x480 with 1 Axes&gt;
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="//localhost:1313/docs/b/">
+  <meta property="og:site_name" content="Collection of Short Articles on ML">
+  <meta property="og:title" content="Submission for Machine Learning Course">
+  <meta property="og:description" content="b # Copyimport numpy as np example of printing an array # Copya = np.array([ [1, 2, 3], ]) print(a) Output:
+[[1 2 3]] Copyimport matplotlib.pyplot as plt plt.plot(np.arange(3), a.flatten()) Output:
+[&lt;matplotlib.lines.Line2D at 0x121440550&gt;] &lt;Figure size 640x480 with 1 Axes&gt;">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Submission for Machine Learning Course | Collection of Short Articles on ML</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="//localhost:1313/docs/b/">
+<link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" integrity="sha256-J8YB/yUcxcl5a7Jyqs6WABPPNR0MKKfhMBSHsy1IAO4=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b8074547beab8a2ea5fb074c046dcf801981259d5b718bc3e486fc4ddf10f496.js" integrity="sha256-uAdFR76rii6l&#43;wdMBG3PgBmBJZ1bcYvD5Ib8Td8Q9JY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+    
+  
+    <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [
+        ["\\[", "\\]"],
+        ["$$", "$$"],
+      ], 
+      inlineMath: [["\\(", "\\)"]], 
+    },
+    loader: {
+      load: ["ui/safe"],
+    },
+  };
+</script>
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Collection of Short Articles on ML</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/omitted_vars/" class="">Can Machines Search for Omitted Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/technical_trading/" class="">Snooping in Technical Trading</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/mle_nn/" class="">Maximum Likelihood Estimation for Neural Networks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/span/" class="">SPAN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/a/" class="">Kaggle DRW Challenge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/b/" class="active">Submission for Machine Learning Course</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Submission for Machine Learning Course</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="b">
+  b
+  <a class="anchor" href="#b">#</a>
+</h1>
+<div class="code-cell" style="position:relative;"><button class="copy-btn" style="position:absolute; top:8px; right:8px;" onclick="navigator.clipboard.writeText(document.getElementById('code-cell-4376690512').innerText); this.blur();">Copy</button><pre id="code-cell-4376690512"><code class="language-python">import numpy as np</code></pre></div>
+<hr>
+<h1 id="example-of-printing-an-array">
+  example of printing an array
+  <a class="anchor" href="#example-of-printing-an-array">#</a>
+</h1>
+<hr>
+<div class="code-cell" style="position:relative;"><button class="copy-btn" style="position:absolute; top:8px; right:8px;" onclick="navigator.clipboard.writeText(document.getElementById('code-cell-4376394608').innerText); this.blur();">Copy</button><pre id="code-cell-4376394608"><code class="language-python">a = np.array([
+    [1, 2, 3],
+])
+print(a)</code></pre></div>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>[[1 2 3]]
+</code></pre><hr>
+<div class="code-cell" style="position:relative;"><button class="copy-btn" style="position:absolute; top:8px; right:8px;" onclick="navigator.clipboard.writeText(document.getElementById('code-cell-4376507824').innerText); this.blur();">Copy</button><pre id="code-cell-4376507824"><code class="language-python">import matplotlib.pyplot as plt
+plt.plot(np.arange(3), a.flatten())</code></pre></div>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>[&lt;matplotlib.lines.Line2D at 0x121440550&gt;]
+</code></pre><pre tabindex="0"><code>&lt;Figure size 640x480 with 1 Axes&gt;
+</code></pre><img src="images/output_image_4376507824.png" alt="Output image" style="max-width: 100%;" />
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

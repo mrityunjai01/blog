@@ -4,22 +4,30 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="
+
+  Introduction
+  #
+
+Technical Trading is defined by the exclusive use of data from past prices and volumes to make trading decisions. It has been widely contested that technical trading doesn&rsquo;t outperform major benchmarks owing to the weak form of the Efficient Market Hypothesis (EMH). However, there are many who believe that technical trading can be profitable, especially when combined with other methods such as fundamental analysis or machine learning. This is especially true when some strategies outperform benchmarks in back-test, leading researchers to claim that those strategies are profitable.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="/categories/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/technical_trading/">
   <meta property="og:site_name" content="Collection of Short Articles on ML">
-  <meta property="og:title" content="Categories">
+  <meta property="og:title" content="Snooping in Technical Trading">
+  <meta property="og:description" content="Introduction # Technical Trading is defined by the exclusive use of data from past prices and volumes to make trading decisions. It has been widely contested that technical trading doesn’t outperform major benchmarks owing to the weak form of the Efficient Market Hypothesis (EMH). However, there are many who believe that technical trading can be profitable, especially when combined with other methods such as fundamental analysis or machine learning. This is especially true when some strategies outperform benchmarks in back-test, leading researchers to claim that those strategies are profitable.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-<title>Categories | Collection of Short Articles on ML</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-10-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-13T00:00:00+00:00">
+<title>Snooping in Technical Trading | Collection of Short Articles on ML</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="/categories/">
+<link rel="canonical" href="/docs/technical_trading/">
 <link rel="stylesheet" href="/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.d736134201fd759d1ed0768958338f10525f611af7709449cb65ecc2944b4a8b.js" ></script>
-<link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="Collection of Short Articles on ML" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -121,7 +129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/technical_trading/" class="">Snooping in Technical Trading</a>
+    <a href="/docs/technical_trading/" class="active">Snooping in Technical Trading</a>
   
 
         </li>
@@ -190,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Categories</h3>
+  <h3>Snooping in Technical Trading</h3>
 
   <label for="toc-control">
     
@@ -203,54 +211,9 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
-  <ul>
   
-    
-    <li class="book-section-flat">
-      <span>Categories</span>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/technology/">Technology</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <span>Tags</span>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/documentation/">Documentation</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/static-site-generator/">Static Site Generator</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/tutorial/">Tutorial</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
+
 
 
   </aside>
@@ -260,14 +223,13 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown book-post">
-  <h1>Categories</h1>
-  
-  
-    <div><a href="/categories/hugo/">Hugo <sup>1</sup></a></div>
-  
-    <div><a href="/categories/technology/">Technology <sup>1</sup></a></div>
-  
+  <article class="markdown book-article"><!-- markdownlint-disable MD025 MD013 -->
+<h1 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h1>
+<p>Technical Trading is defined by the exclusive use of data from past prices and volumes to make trading decisions. It has been widely contested that technical trading doesn&rsquo;t outperform major benchmarks owing to the weak form of the Efficient Market Hypothesis (EMH). However, there are many who believe that technical trading can be profitable, especially when combined with other methods such as fundamental analysis or machine learning. This is especially true when some strategies outperform benchmarks in back-test, leading researchers to claim that those strategies are profitable.</p>
+<p>In this post, I will show that there are certain conditions on the time series price signal which can be exploited to make profitable trades. I will also show how it is possible to detect data snooping when selecting a performant strategy. I will also show that the profitability of technical trading is not necessarily due to the exploitation of market inefficiencies, but rather due to the exploitation of the time series properties of the price signal itself. This means that I to restrict the universe of my analysis to technical trading strategies which only use past prices as inputs to trading decisions. This excludes most strategies which use fundamental data or even data from other assets, as is the case in Statistical Arbitrage strategies.</p>
 </article>
  
       
@@ -293,6 +255,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -302,54 +268,9 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
-  <ul>
   
-    
-    <li class="book-section-flat">
-      <span>Categories</span>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/technology/">Technology</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <span>Tags</span>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/documentation/">Documentation</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/static-site-generator/">Static Site Generator</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/tutorial/">Tutorial</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
+
 
  
       </div>
