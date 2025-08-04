@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Introduction
+  #
+
+We&rsquo;ve all come across reddit posts with controversial or opinionated claims and are surprised by the number of supporting comments they receive. At times, this is merely a function of genuine support for contrarian viewpoints. However, if I come across the same small subset of users promoting a particular narrative, I sometimes begin to question if there&rsquo;s a bit of a systematic component to it. There is some chance that a group of users collude to write group-affirming comments, perhaps supported or controlled by a single entity. This is usually suspicious if there&rsquo;s very little activity from such astroturfing users apart from such posts.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/blog/docs/reddit_astroturfing/">
+  <meta property="og:site_name" content="Collection of Short Articles on ML">
+  <meta property="og:title" content="Reddit Astroturfing: A Bayesian Approach">
+  <meta property="og:description" content="Introduction # We’ve all come across reddit posts with controversial or opinionated claims and are surprised by the number of supporting comments they receive. At times, this is merely a function of genuine support for contrarian viewpoints. However, if I come across the same small subset of users promoting a particular narrative, I sometimes begin to question if there’s a bit of a systematic component to it. There is some chance that a group of users collude to write group-affirming comments, perhaps supported or controlled by a single entity. This is usually suspicious if there’s very little activity from such astroturfing users apart from such posts.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-03-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-11T00:00:00+00:00">
+<title>Reddit Astroturfing: A Bayesian Approach | Collection of Short Articles on ML</title>
+<link rel="icon" href="/blog/favicon.png" >
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="canonical" href="/blog/docs/reddit_astroturfing/">
+<link rel="stylesheet" href="/blog/book.min.27c601ff251cc5c9796bb272aace960013cf351d0c28a7e1301487b32d4800ee.css" >
+  <script defer src="/blog/fuse.min.js"></script>
+  <script defer src="/blog/en.search.min.9476520cd451ee2d5e7732fd74e16855a56b2f1a01b9e001f397750f08ce6a3d.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+    
+  
+    <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [
+        ["\\[", "\\]"],
+        ["$$", "$$"],
+      ], 
+      inlineMath: [["\\(", "\\)"]], 
+    },
+    loader: {
+      load: ["ui/safe"],
+    },
+  };
+</script>
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/blog/"><span>Collection of Short Articles on ML</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/ret_1/" class="">Zero-shot Retrieval With Priors</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/search/" class="">Parametrizing Decision Trees</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/reddit_astroturfing/" class="active">Reddit Astroturfing: A Bayesian Approach</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/omitted_vars/" class="">Can Machines Search for Omitted Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/technical_trading/" class="">Snooping in Technical Trading</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/mle_nn/" class="">Maximum Likelihood Estimation for Neural Networks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/blog/docs/span/" class="">SPAN</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/blog/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Reddit Astroturfing: A Bayesian Approach</h3>
+
+  <label for="toc-control">
+    
+    <img src="/blog/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#intuition">Intuition</a></li>
+    <li><a href="#reasoning">Reasoning</a></li>
+    <li><a href="#program">Program</a>
+      <ul>
+        <li><a href="#model-structure">Model Structure</a></li>
+        <li><a href="#data-variables">Data Variables</a></li>
+        <li><a href="#parameters">Parameters</a></li>
+        <li><a href="#prior-distributions">Prior Distributions</a></li>
+        <li><a href="#likelihood-distributions">Likelihood Distributions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<p>We&rsquo;ve all come across reddit posts with controversial or opinionated claims and are surprised by the number of supporting comments they receive. At times, this is merely a function of genuine support for contrarian viewpoints. However, if I come across the same small subset of users promoting a particular narrative, I sometimes begin to question if there&rsquo;s a bit of a systematic component to it. There is some chance that a group of users collude to write group-affirming comments, perhaps supported or controlled by a single entity. This is usually suspicious if there&rsquo;s very little activity from such astroturfing users apart from such posts.</p>
+<p>In this post, I aim to describe a Bayesian Inference approach which handles the problem of detecting such coordinated commenting behavior on reddit posts. The model is designed to differentiate between genuine user engagement and potential astroturfing activity, while accounting for the natural variation in post popularity and user commenting behavior.</p>
+<p>We have to be careful to differentiate this from other non-offending posts which receive a large number of broadly interested community members, which might also coincidentally receive comments from astroturfing users. There needs to be a way to properly measure the certainty with which we can claim that a given set of users is astroturfing. Not just that, it&rsquo;d be helpful if we could get all subsets of astroturfing users.</p>
+<p>A common approach used to detect such manipulative activity is to use timestamp data to filter out manipulative activity which took place in a short span of time. This is particularly useful when there&rsquo;s a long persisting interaction with content, such as in Online Shopping reviews, or Yelp reviews. However, this is not effective and misses a lot of activity on social media comment sections which anyways happens in a short span of time.</p>
+<h2 id="intuition">
+  Intuition
+  <a class="anchor" href="#intuition">#</a>
+</h2>
+<p>There are two things we need to take care of:</p>
+<ol>
+<li>There are certain posts with high participation from the community. On such posts, we might observe a lot of coincidental simultaneous involvement from unrelated users. Our model should be able to learn this probabilistic behaviour of comment-post interaction. This also holds true for posts with low participation, where simultaneous involvement is more suspicious than in the case of high participation posts.</li>
+<li>There are some commenters who comment on a lot of posts, and some who comment on very few. We need to account for this in our model, so that we can differentiate between a users who are colluding and ones who are indiscriminately commenting on posts.</li>
+</ol>
+<h2 id="reasoning">
+  Reasoning
+  <a class="anchor" href="#reasoning">#</a>
+</h2>
+<p>This hierarchical Bayesian model addresses the challenge of detecting coordinated commenting behavior while accounting for natural variation in both post popularity and user activity levels.
+Key Design Rationale
+Post-Specific Effects (alpha): The model incorporates post-specific logit intercepts to capture the inherent &ldquo;attractiveness&rdquo; or engagement level of individual posts. High-participation posts naturally generate more simultaneous comments from unrelated users, making coincidental overlap common and less suspicious. Conversely, low-participation posts have lower baseline engagement, so simultaneous commenting becomes more indicative of potential coordination rather than organic interest.
+User-Specific Effects (beta): Commentor-specific parameters account for individual propensities to comment across the platform. Some users are naturally prolific commenters who engage with many posts indiscriminately, while others are selective participants. By modeling these baseline tendencies, the model can distinguish between users who comment together frequently due to high individual activity rates versus those whose joint participation exceeds what would be expected from their individual behaviors alone.
+Hierarchical Structure: The inclusion of additional commenting data (y_rem) through the hierarchical prior prevents overfitting to the specific posts under investigation. This allows the model to learn realistic baseline commenting probabilities from a broader sample of user behavior, providing better context for evaluating whether observed co-commenting patterns are suspicious or within normal bounds.</p>
+<h2 id="program">
+  Program
+  <a class="anchor" href="#program">#</a>
+</h2>
+<p>Here&rsquo;s the stan program we use for modelling comment behaviour.</p>
+<pre tabindex="0"><code class="language-stan" data-lang="stan">data {
+int&lt;lower=1&gt; N;
+ int&lt;lower=1&gt; S;
+ int&lt;lower=1&gt; R;
+ array[S, N] int&lt;lower=0,upper=1&gt; y;
+array[S] int&lt;lower=0&gt; y_rem;
+}
+
+parameters {
+vector[N] alpha; // item-specific logit intercepts
+vector[S] beta; // subset-specific effects
+real mu_alpha; // hyperprior mean for item effects
+real&lt;lower=0&gt; sigma_alpha; // hyperprior sd for item effects
+real mu_beta;
+real&lt;lower=0&gt; sigma_beta;
+real alpha_0;
+real mu_alpha_0;
+real&lt;lower=0&gt; sigma_alpha_0;
+
+}
+
+model {
+// Hyperpriors
+mu_alpha ~ normal(0, 1);
+sigma_alpha ~ exponential(1);
+mu_beta ~ normal(0, 1);
+sigma_beta ~ exponential(1);
+mu_alpha_0 ~ normal(0, 1);
+sigma_alpha_0 ~ exponential(1);
+
+// Hierarchical priors
+alpha_0 ~ normal(mu_alpha_0, sigma_alpha_0);
+alpha ~ normal(alpha_0, sigma_alpha);
+beta ~ normal(mu_beta, sigma_beta);
+
+// Likelihood
+for (s in 1:S) {
+for (n in 1:N) {
+y[s,n] ~ bernoulli_logit(alpha[n] + beta[s]);
+}
+y_rem[s] ~ binomial(R, inv_logit(alpha_0 + beta[s]));
+}
+}
+</code></pre><p>This Stan program implements a hierarchical Bayesian model to analyze commenting patterns between users and posts, incorporating both observed and unobserved commenting behavior.</p>
+<h3 id="model-structure">
+  Model Structure
+  <a class="anchor" href="#model-structure">#</a>
+</h3>
+<p>The model assumes that the probability of commentor <code>s</code> commenting on post <code>n</code> follows a Bernoulli distribution with logit-linear predictors combining post-specific and commentor-specific effects.</p>
+<h3 id="data-variables">
+  Data Variables
+  <a class="anchor" href="#data-variables">#</a>
+</h3>
+<ol>
+<li><strong>N</strong> (<code>int&lt;lower=1&gt;</code>): Number of posts in the observed dataset</li>
+<li><strong>S</strong> (<code>int&lt;lower=1&gt;</code>): Number of commentors being studied</li>
+<li><strong>R</strong> (<code>int&lt;lower=1&gt;</code>): Number of additional posts not in the main dataset (used for hierarchical modeling)</li>
+<li><strong>y</strong> (<code>array[S, N] int&lt;lower=0,upper=1&gt;</code>): Binary comment matrix where <code>y[s,n] = 1</code> if commentor <code>s</code> commented on post <code>n</code>, 0 otherwise</li>
+<li><strong>y_rem</strong> (<code>array[S] int&lt;lower=0&gt;</code>): Count of comments each commentor <code>s</code> made on the <code>R</code> additional posts</li>
+</ol>
+<h3 id="parameters">
+  Parameters
+  <a class="anchor" href="#parameters">#</a>
+</h3>
+<ol start="6">
+<li><strong>alpha</strong> (<code>vector[N]</code>): Post-specific logit intercepts representing each post&rsquo;s baseline propensity to receive comments</li>
+<li><strong>beta</strong> (<code>vector[S]</code>): Commentor-specific logit effects representing each commentor&rsquo;s baseline propensity to comment</li>
+<li><strong>mu_alpha</strong> (<code>real</code>): Population mean for post effects (unused in current specification)</li>
+<li><strong>sigma_alpha</strong> (<code>real&lt;lower=0&gt;</code>): Population standard deviation for post effects</li>
+<li><strong>mu_beta</strong> (<code>real</code>): Population mean for commentor effects</li>
+<li><strong>sigma_beta</strong> (<code>real&lt;lower=0&gt;</code>): Population standard deviation for commentor effects</li>
+<li><strong>alpha_0</strong> (<code>real</code>): Baseline post effect for the additional <code>R</code> posts</li>
+<li><strong>mu_alpha_0</strong> (<code>real</code>): Prior mean for baseline post effect</li>
+<li><strong>sigma_alpha_0</strong> (<code>real&lt;lower=0&gt;</code>): Prior standard deviation for baseline post effect</li>
+</ol>
+<h3 id="prior-distributions">
+  Prior Distributions
+  <a class="anchor" href="#prior-distributions">#</a>
+</h3>
+<ol start="15">
+<li><strong>mu_alpha</strong> ~ Normal(0, 1)</li>
+<li><strong>sigma_alpha</strong> ~ Exponential(1)</li>
+<li><strong>mu_beta</strong> ~ Normal(0, 1)</li>
+<li><strong>sigma_beta</strong> ~ Exponential(1)</li>
+<li><strong>mu_alpha_0</strong> ~ Normal(0, 1)</li>
+<li><strong>sigma_alpha_0</strong> ~ Exponential(1)</li>
+<li><strong>alpha_0</strong> ~ Normal(mu_alpha_0, sigma_alpha_0)</li>
+<li><strong>alpha[n]</strong> ~ Normal(alpha_0, sigma_alpha) for n = 1, &hellip;, N</li>
+<li><strong>beta[s]</strong> ~ Normal(mu_beta, sigma_beta) for s = 1, &hellip;, S</li>
+</ol>
+<h3 id="likelihood-distributions">
+  Likelihood Distributions
+  <a class="anchor" href="#likelihood-distributions">#</a>
+</h3>
+<ol start="24">
+<li><strong>y[s,n]</strong> ~ Bernoulli_logit(alpha[n] + beta[s]) for s = 1, &hellip;, S and n = 1, &hellip;, N</li>
+<li><strong>y_rem[s]</strong> ~ Binomial(R, inv_logit(alpha_0 + beta[s])) for s = 1, &hellip;, S</li>
+</ol>
+<p>The hierarchical structure allows information from the additional posts (<code>y_rem</code>) to inform the prior distribution for the observed post effects (<code>alpha</code>) through the shared baseline <code>alpha_0</code>.</p>
+<pre tabindex="0"><code></code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#intuition">Intuition</a></li>
+    <li><a href="#reasoning">Reasoning</a></li>
+    <li><a href="#program">Program</a>
+      <ul>
+        <li><a href="#model-structure">Model Structure</a></li>
+        <li><a href="#data-variables">Data Variables</a></li>
+        <li><a href="#parameters">Parameters</a></li>
+        <li><a href="#prior-distributions">Prior Distributions</a></li>
+        <li><a href="#likelihood-distributions">Likelihood Distributions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

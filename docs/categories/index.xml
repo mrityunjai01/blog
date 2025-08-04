@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Collection of Short Articles on ML</title>
-    <link>/categories/</link>
+    <link>/blog/categories/</link>
     <description>Recent content in Categories on Collection of Short Articles on ML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>/categories/hugo/</link>
+      <link>/blog/categories/hugo/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/categories/hugo/</guid>
+      <guid>/blog/categories/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>/categories/technology/</link>
+      <link>/blog/categories/technology/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/categories/technology/</guid>
+      <guid>/blog/categories/technology/</guid>
       <description></description>
     </item>
   </channel>

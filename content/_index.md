@@ -1,8 +1,7 @@
 ---
-title: Blog on Tech
+title: A Short Collection of Articles on Tech, ML and Statistics
 type: docs
+unlisted: true
 ---
 
-# Intro
-
-I created this blog to share my thoughts on some topics I find interesting.
+I created this page to share my thoughts on some topics I find interesting. Most work here is expository and not rigorously expanded, so a bit of prior understanding might be needed.
