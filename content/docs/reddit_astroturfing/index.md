@@ -13,7 +13,7 @@ We've all come across reddit posts with controversial or opinionated claims and 
 
 In this post, I aim to describe a Bayesian Inference approach which handles the problem of detecting such coordinated commenting behavior on reddit posts. The model is designed to differentiate between genuine user engagement and potential astroturfing activity, while accounting for the natural variation in post popularity and user commenting behavior.
 
-We have to be careful to differentiate this from other non-offending posts which receive a large number of broadly interested community members, which might also coincidentally receive comments from astroturfing users. There needs to be a way to properly measure the certainty with which we can claim that a given set of users is astroturfing. Not just that, it'd be helpful if we could get all subsets of astroturfing users.
+We have to be careful to differentiate this from other non-offending posts which receive a large number of broadly interested community members, which might also coincidentally receive comments from astroturfing users. There needs to be a way to properly measure the certainty with which we can claim that a given set of users is astroturfing. Not just that, it'd be helpful if we could get all subsets of astroturfing users. I have attached a python notebook which showcases a three step approach to this problem using STAN for bayesian modelling.
 
 A common approach used to detect such manipulative activity is to use timestamp data to filter out manipulative activity which took place in a short span of time. This is particularly useful when there's a long persisting interaction with content, such as in Online Shopping reviews, or Yelp reviews. However, this is not effective and misses a lot of activity on social media comment sections which anyways happens in a short span of time.
 
@@ -24,13 +24,30 @@ There are two things we need to take care of:
 1. There are certain posts with high participation from the community. On such posts, we might observe a lot of coincidental simultaneous involvement from unrelated users. Our model should be able to learn this probabilistic behaviour of comment-post interaction. This also holds true for posts with low participation, where simultaneous involvement is more suspicious than in the case of high participation posts.
 2. There are some commenters who comment on a lot of posts, and some who comment on very few. We need to account for this in our model, so that we can differentiate between a users who are colluding and ones who are indiscriminately commenting on posts.
 
+So all in all, we only want to flag subsets of commenters who seem to be commenting on unpopular posts, which possibly are one of the very few posts that they comment on. We want both of these conditions met to some degree.
+
+## Method
+
+We start with a simple webscraper that collects posts and comments from a given subreddit. We collect all posts made in the past week for illustration.
+Here's an illustrious example of posts taken from [ethereum subreddit](https://www.reddit.com/r/ethereum/top/?t=week). For each such post, we collect a list of commenter user ids, for commenters who wrote comments on the post.
+
+<img src="images/im1.png" alt="Ethereum Top Posts" width="600">
+
+1. We mine frequent itemsets from a set of commenter id sets for each post from the set of posts. That is for each post, we collect the commenter user ids into a set. We further mine a set of commentor ids which most frequently simultaneously comment on posts. This is done using a prefix tree algorithm.
+
+2. We construct a bayesian model for the each poster-commenter interaction. If there are `S` posts and `N` commenters, we have `N X S` numbers to model using independent post-wise params and independent commenter-wise params.
+
+3. We run posterior simulations to obtain a sample of posterior parameters, alpha and beta. For each such draw of posterior parameters, we run a random variable draw to populate the original `y` matrix. This set of posterior predictions is processed to find the number of posterior predictions where the comments of interest appear together, giving us a sample of simultaneity frequencies. We then describe the position of the observed simultaneity frequency from the original `y` in the sample of simultaneity frequency draws. If this observed frequency is greater than the 99th percentile among the posterior predictive frequencies, we claim that it is inconsistent with a model of independent decisions, and the commenters might have colluded (astroturfing).
+
 ## Reasoning
 
 This hierarchical Bayesian model addresses the challenge of detecting coordinated commenting behavior while accounting for natural variation in both post popularity and user activity levels.
-Key Design Rationale
-Post-Specific Effects (alpha): The model incorporates post-specific logit intercepts to capture the inherent "attractiveness" or engagement level of individual posts. High-participation posts naturally generate more simultaneous comments from unrelated users, making coincidental overlap common and less suspicious. Conversely, low-participation posts have lower baseline engagement, so simultaneous commenting becomes more indicative of potential coordination rather than organic interest.
-User-Specific Effects (beta): Commentor-specific parameters account for individual propensities to comment across the platform. Some users are naturally prolific commenters who engage with many posts indiscriminately, while others are selective participants. By modeling these baseline tendencies, the model can distinguish between users who comment together frequently due to high individual activity rates versus those whose joint participation exceeds what would be expected from their individual behaviors alone.
-Hierarchical Structure: The inclusion of additional commenting data (y_rem) through the hierarchical prior prevents overfitting to the specific posts under investigation. This allows the model to learn realistic baseline commenting probabilities from a broader sample of user behavior, providing better context for evaluating whether observed co-commenting patterns are suspicious or within normal bounds.
+
+### Key Design Rationale
+
+- Post-Specific Effects (alpha): The model incorporates post-specific logit intercepts to capture the inherent "attractiveness" or engagement level of individual posts. High-participation posts naturally generate more simultaneous comments from unrelated users, making coincidental overlap common and less suspicious. Conversely, low-participation posts have lower baseline engagement, so simultaneous commenting becomes more indicative of potential coordination rather than organic interest.
+- User-Specific Effects (beta): Commentor-specific parameters account for individual propensities to comment across the platform. Some users are naturally prolific commenters who engage with many posts indiscriminately, while others are selective participants. By modeling these baseline tendencies, the model can distinguish between users who comment together frequently due to high individual activity rates versus those whose joint participation exceeds what would be expected from their individual behaviors alone.
+- Hierarchical Structure: The inclusion of additional commenting data (y_rem) through the hierarchical prior prevents overfitting to the specific posts under investigation. This allows the model to learn realistic baseline commenting probabilities from a broader sample of user behavior, providing better context for evaluating whether observed co-commenting patterns are suspicious or within normal bounds.
 
 ## Program
 
@@ -127,7 +144,3 @@ The model assumes that the probability of commentor `s` commenting on post `n` f
 25. **y_rem[s]** ~ Binomial(R, inv_logit(alpha_0 + beta[s])) for s = 1, ..., S
 
 The hierarchical structure allows information from the additional posts (`y_rem`) to inform the prior distribution for the observed post effects (`alpha`) through the shared baseline `alpha_0`.
-
-```
-
-```

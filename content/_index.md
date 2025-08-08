@@ -1,5 +1,5 @@
 ---
-title: A Short Collection of Articles on Tech, ML and Statistics
+title: A Collection of Short Articles on Tech and Machine Learning
 type: docs
 unlisted: true
 ---
