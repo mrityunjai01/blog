@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Collection of Short Articles on ML</title>
-    <link>/blog/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Collection of Short Articles on ML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Documentation</title>
-      <link>/blog/tags/documentation/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/tags/documentation/</guid>
+      <link>/tags/documentation/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Static Site Generator</title>
-      <link>/blog/tags/static-site-generator/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/tags/static-site-generator/</guid>
+      <link>/tags/static-site-generator/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/static-site-generator/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>/blog/tags/tutorial/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/tags/tutorial/</guid>
+      <link>/tags/tutorial/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,57 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blog/docs/ret_1/</loc>
+    <loc>/docs/ret_1/</loc>
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/param_dt/</loc>
+    <loc>/docs/bpe_tokenizer_training/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/docs/param_dt/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/search/</loc>
+    <loc>/docs/search/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/reddit_astroturfing/</loc>
+    <loc>/docs/reddit_astroturfing/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/omitted_vars/</loc>
+    <loc>/docs/omitted_vars/</loc>
     <lastmod>2024-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/technical_trading/</loc>
+    <loc>/docs/technical_trading/</loc>
     <lastmod>2024-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/mle_nn/</loc>
+    <loc>/docs/mle_nn/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/span/</loc>
+    <loc>/docs/span/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>/</loc>
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/categories/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/documentation/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/tags/documentation/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/categories/hugo/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/categories/hugo/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/static-site-generator/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/tags/static-site-generator/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/categories/technology/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/categories/technology/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/tutorial/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/docs/bayes_nn/</loc>
+    <loc>/docs/bayes_nn/</loc>
   </url>
 </urlset>
